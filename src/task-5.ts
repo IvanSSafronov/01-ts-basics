@@ -1,14 +1,14 @@
-let status: { status: "loading" | "success" | "error" }
-function logStatus(status: { status: "loading" | "success" | "error" }) {
-  if (status.status === "loading") {
+
+function logStatus(status: "loading" | "success" | "error"): void {
+  if (status === "loading") {
     console.log("Loading...");
-  } else if (status.status === "success") {
+  } else if (status === "success") {
     console.log("Success!");
-  } else if (status.status === "error") {
+  } else if (status === "error") {
     console.log("Something went wrong");
   }
 }
 
-logStatus({ status: "loading" });
-logStatus({ status: "success" });
-logStatus({ status: "error" });
+logStatus("loading");
+logStatus("success");
+logStatus("error");

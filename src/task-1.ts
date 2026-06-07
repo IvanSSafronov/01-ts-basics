@@ -1,10 +1,9 @@
-const user:{name:string, age:number, isOnline:boolean}={
- name: "Alice",
- age: 30,
- isOnline: true
-}
 
-console.log(`Name: ${user.name}`);
-console.log(`Age: ${user.age}`);
-console.log(`Online: ${user.isOnline}`);
+const name: { name: string } = { name: "Alice" };
+const age: number = 30;
+const isOnline: boolean = true;
+
+console.log(`Name: ${name.name}`);
+console.log(`Age: ${age}`);
+console.log(`Online: ${isOnline}`);
 

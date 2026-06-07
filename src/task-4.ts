@@ -1,17 +1,16 @@
-interface User{
-    name: string,
-    age:number,
-    email?: string
+interface User {  
+  name: string;
+  age: number;
+  email?: string;
 }
 
-
-function printUserInfo(user:User) {
-  console.log("Name:", user.name);
-  console.log("Age:", user.age);
-  if (user.email) {
-    console.log("Email:", user.email);
+function printUserInfo(name: string, age: number, email?: string): void {
+  console.log("Name:", name);
+  console.log("Age:", age);
+  if (email) {
+    console.log("Email:", email);
   }
 }
 
-printUserInfo({ name: "Alice", age: 30 });
-printUserInfo({ name: "Bob", age: 25, email: "bob@mail.com" });
+printUserInfo("Alice", 30);
+printUserInfo("Bob", 25, "bob@mail.com");
